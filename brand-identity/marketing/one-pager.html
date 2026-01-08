@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neoverse DTS - One Pager</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: #1E1E1E;
+            background: white;
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #0A2463 0%, #6B4CE6 100%);
+            padding: 40px 50px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0,217,255,0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .logo-section {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 20px;
+        }
+
+        .company-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            margin-top: 15px;
+            opacity: 0.9;
+            max-width: 600px;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 40px 50px;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0A2463;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #6B4CE6;
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #6B4CE6;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+            border-left: 4px solid #6B4CE6;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .service-card h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #0A2463;
+            margin-bottom: 8px;
+        }
+
+        .service-card p {
+            font-size: 13px;
+            color: #4a4a4a;
+            line-height: 1.5;
+        }
+
+        /* Expertise Section */
+        .expertise {
+            background: linear-gradient(135deg, #0A2463 0%, #1a3580 100%);
+            padding: 25px 50px;
+            color: white;
+            margin-top: 25px;
+        }
+
+        .expertise h3 {
+            color: #00D9FF;
+            border-bottom: 2px solid #00D9FF;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .expertise-items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .expertise-item {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            padding: 8px 0;
+        }
+
+        .expertise-item::before {
+            content: '✓';
+            color: #00FF88;
+            font-weight: bold;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            margin-top: 25px;
+        }
+
+        .highlight-boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #6B4CE6 0%, #8B6CE6 100%);
+            color: white;
+            padding: 20px 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .highlight-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            background: linear-gradient(135deg, #00D9FF 0%, #00FF88 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .highlight-text {
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: #1E1E1E;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left {
+            flex: 1;
+        }
+
+        .footer-right {
+            text-align: right;
+        }
+
+        .footer h4 {
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #00D9FF;
+        }
+
+        .footer p {
+            font-size: 12px;
+            margin: 3px 0;
+            opacity: 0.9;
+        }
+
+        /* Target Audience */
+        .target-audience {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .audience-badge {
+            background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+            border: 2px solid #00D9FF;
+            color: #0A2463;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .page {
+                margin: 0;
+                border: none;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-section">
+                <div class="company-name">Neoverse DTS</div>
+                <div class="tagline">Digital Transformation Solutions</div>
+            </div>
+            <div class="subtitle">
+                Empowering financial institutions and enterprises with innovative digital transformation solutions,
+                backed by 12+ years of industry expertise.
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Services -->
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h4>🎯 Digital Transformation Consulting</h4>
+                    <p>Strategic advisory, roadmap development, digital maturity assessment, and AI integration consulting.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>💻 Custom Solution Development</h4>
+                    <p>Mobile apps (iOS & Android), web platforms, APIs, and seamless system integration.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>🔒 Cybersecurity & Compliance</h4>
+                    <p>ISO 27001, COBIT implementation, MFA solutions, and comprehensive risk management.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>💳 FinTech Solutions</h4>
+                    <p>Payment gateways, digital banking platforms, and full regulatory compliance support.</p>
+                </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="why-us">
+                <h2>Why Choose Neoverse DTS?</h2>
+                <div class="highlight-boxes">
+                    <div class="highlight-box">
+                        <div class="highlight-number">12+</div>
+                        <div class="highlight-text">Years of Industry<br>Expertise</div>
+                    </div>
+                    <div class="highlight-box">
+                        <div class="highlight-number">50+</div>
+                        <div class="highlight-text">Successful<br>Projects</div>
+                    </div>
+                    <div class="highlight-box">
+                        <div class="highlight-number">100%</div>
+                        <div class="highlight-text">Client<br>Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Target Audience -->
+            <h3>Who We Serve</h3>
+            <div class="target-audience">
+                <div class="audience-badge">🏦 Financial Institutions</div>
+                <div class="audience-badge">🏢 Enterprise Organizations</div>
+                <div class="audience-badge">🏛️ Government Agencies</div>
+                <div class="audience-badge">🚀 FinTech Companies</div>
+            </div>
+        </div>
+
+        <!-- Expertise Section -->
+        <div class="expertise">
+            <h3>Core Expertise</h3>
+            <div class="expertise-items">
+                <div class="expertise-item">12+ years banking technology experience</div>
+                <div class="expertise-item">ISO 27001 & COBIT certified solutions</div>
+                <div class="expertise-item">Multi-factor authentication (MFA) expert</div>
+                <div class="expertise-item">Cloud & hybrid infrastructure</div>
+                <div class="expertise-item">AI & machine learning integration</div>
+                <div class="expertise-item">Regulatory compliance (Central Bank)</div>
+                <div class="expertise-item">Digital payment systems</div>
+                <div class="expertise-item">Enterprise architecture design</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-left">
+                <h4>Get in Touch</h4>
+                <p>📧 Email: contact@neoverse-dts.com</p>
+                <p>📱 Phone: +XXX XXX XXXX</p>
+                <p>🌐 Web: www.neoverse-dts.com</p>
+            </div>
+            <div class="footer-right">
+                <h4>Let's Transform Together</h4>
+                <p>Schedule a consultation today</p>
+                <p>© 2026 Neoverse DTS. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
