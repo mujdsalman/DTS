@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neoverse DTS - Brand Guidelines</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1E1E1E;
+            background: #FFFFFF;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #0A2463;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #0A2463;
+            margin-top: 60px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #6B4CE6;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #6B4CE6;
+            margin-top: 40px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0A2463 0%, #6B4CE6 100%);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+            margin: -40px -20px 60px -20px;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 56px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .color-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .color-sample {
+            height: 150px;
+            width: 100%;
+        }
+
+        .color-info {
+            padding: 15px;
+            background: white;
+        }
+
+        .color-name {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .color-values {
+            font-size: 13px;
+            color: #666;
+            font-family: 'Courier New', monospace;
+        }
+
+        .color-values div {
+            margin: 4px 0;
+        }
+
+        .logo-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .logo-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .logo-card.dark {
+            background: #1E1E1E;
+            border-color: #1E1E1E;
+        }
+
+        .logo-card h4 {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .logo-card.dark h4 {
+            color: white;
+        }
+
+        .typography-sample {
+            margin: 30px 0;
+            padding: 30px;
+            background: #F5F7FA;
+            border-radius: 12px;
+        }
+
+        .font-showcase {
+            margin: 20px 0;
+        }
+
+        .font-name {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .poppins-display {
+            font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .poppins-heading {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .inter-body {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .usage-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .usage-card {
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid;
+        }
+
+        .do {
+            border-color: #00FF88;
+            background: #f0fff8;
+        }
+
+        .dont {
+            border-color: #FF6B6B;
+            background: #fff0f0;
+        }
+
+        .usage-card h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .do h4 {
+            color: #00AA5B;
+        }
+
+        .dont h4 {
+            color: #CC0000;
+        }
+
+        .section {
+            margin: 60px 0;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .gradient-sample {
+            height: 100px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .gradient-1 {
+            background: linear-gradient(90deg, #6B4CE6 0%, #00D9FF 100%);
+        }
+
+        .gradient-2 {
+            background: linear-gradient(90deg, #0A2463 0%, #00FF88 100%);
+        }
+
+        @media print {
+            .hero {
+                margin: 0;
+                page-break-after: always;
+            }
+
+            h2 {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Neoverse DTS</h1>
+        <p>Digital Transformation Solutions - Brand Guidelines</p>
+        <p style="font-size: 16px; margin-top: 20px;">Version 1.0 | January 2026</p>
+    </div>
+
+    <div class="container">
+        <!-- Brand Overview -->
+        <section class="section">
+            <h2>Brand Overview</h2>
+            <p>Neoverse Digital Transformation Solutions (DTS) is a bold and innovative division specializing in comprehensive digital transformation services for financial institutions and enterprise organizations.</p>
+
+            <h3>Brand Personality</h3>
+            <ul>
+                <li><strong>Professional & Credible</strong> - Trusted partner for financial institutions</li>
+                <li><strong>Innovative & Bold</strong> - Forward-thinking solutions and approaches</li>
+                <li><strong>Expert & Knowledgeable</strong> - Deep industry expertise and technical mastery</li>
+                <li><strong>Trustworthy</strong> - Security-first mindset and regulatory compliance</li>
+            </ul>
+
+            <h3>Core Values</h3>
+            <ul>
+                <li><strong>Excellence</strong> - Delivering exceptional quality in every project</li>
+                <li><strong>Innovation</strong> - Pushing boundaries with cutting-edge technology</li>
+                <li><strong>Trust</strong> - Building lasting relationships through reliability</li>
+                <li><strong>Expertise</strong> - Leveraging 12+ years of industry knowledge</li>
+            </ul>
+        </section>
+
+        <!-- Logo System -->
+        <section class="section">
+            <h2>Logo System</h2>
+            <p>The Neoverse DTS logo combines a dynamic digital transformation symbol with modern typography to represent innovation, expertise, and forward momentum.</p>
+
+            <h3>Logo Variations</h3>
+            <div class="logo-showcase">
+                <div class="logo-card">
+                    <img src="../logos/neoverse-dts-primary.svg" alt="Primary Logo" style="max-width: 100%; height: auto;">
+                    <h4>Primary Logo</h4>
+                    <p style="font-size: 12px; color: #666; margin-top: 5px;">Use on light backgrounds</p>
+                </div>
+
+                <div class="logo-card dark">
+                    <img src="../logos/neoverse-dts-white.svg" alt="White Logo" style="max-width: 100%; height: auto;">
+                    <h4>Reversed Logo</h4>
+                    <p style="font-size: 12px; color: #ccc; margin-top: 5px;">Use on dark backgrounds</p>
+                </div>
+
+                <div class="logo-card">
+                    <img src="../logos/neoverse-dts-icon-only.svg" alt="Icon Only" style="max-width: 100%; height: auto;">
+                    <h4>Icon Only</h4>
+                    <p style="font-size: 12px; color: #666; margin-top: 5px;">Use for social media, favicons</p>
+                </div>
+
+                <div class="logo-card">
+                    <img src="../logos/neoverse-dts-monochrome-black.svg" alt="Monochrome" style="max-width: 100%; height: auto;">
+                    <h4>Monochrome</h4>
+                    <p style="font-size: 12px; color: #666; margin-top: 5px;">Use when color is not available</p>
+                </div>
+            </div>
+
+            <h3>Logo Usage Guidelines</h3>
+            <div class="usage-grid">
+                <div class="usage-card do">
+                    <h4>✓ DO</h4>
+                    <ul>
+                        <li>Always maintain proper clear space (minimum 1x symbol height)</li>
+                        <li>Use provided logo files only</li>
+                        <li>Ensure logo is clearly legible at all sizes</li>
+                        <li>Use appropriate version for background color</li>
+                    </ul>
+                </div>
+
+                <div class="usage-card dont">
+                    <h4>✗ DON'T</h4>
+                    <ul>
+                        <li>Don't stretch, distort, or rotate the logo</li>
+                        <li>Don't change logo colors or add effects</li>
+                        <li>Don't use logo smaller than 30mm wide (print) or 120px wide (digital)</li>
+                        <li>Don't recreate or modify the logo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Color Palette -->
+        <section class="section">
+            <h2>Color Palette</h2>
+            <p>Our color system balances professional trust with bold innovation, perfect for the financial technology sector.</p>
+
+            <h3>Primary Colors</h3>
+            <div class="color-palette">
+                <div class="color-card">
+                    <div class="color-sample" style="background: #0A2463;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Deep Blue</div>
+                        <div class="color-values">
+                            <div>HEX: #0A2463</div>
+                            <div>RGB: 10, 36, 99</div>
+                            <div>CMYK: 90, 64, 0, 61</div>
+                        </div>
+                        <p style="margin-top: 10px; font-size: 12px;">Trust & Financial Credibility</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-sample" style="background: #6B4CE6;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Tech Purple</div>
+                        <div class="color-values">
+                            <div>HEX: #6B4CE6</div>
+                            <div>RGB: 107, 76, 230</div>
+                            <div>CMYK: 53, 67, 0, 10</div>
+                        </div>
+                        <p style="margin-top: 10px; font-size: 12px;">Innovation & Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Secondary Colors</h3>
+            <div class="color-palette">
+                <div class="color-card">
+                    <div class="color-sample" style="background: #00D9FF;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Vibrant Cyan</div>
+                        <div class="color-values">
+                            <div>HEX: #00D9FF</div>
+                            <div>RGB: 0, 217, 255</div>
+                            <div>CMYK: 100, 15, 0, 0</div>
+                        </div>
+                        <p style="margin-top: 10px; font-size: 12px;">Digital Transformation</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-sample" style="background: #00FF88;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Electric Green</div>
+                        <div class="color-values">
+                            <div>HEX: #00FF88</div>
+                            <div>RGB: 0, 255, 136</div>
+                            <div>CMYK: 100, 0, 47, 0</div>
+                        </div>
+                        <p style="margin-top: 10px; font-size: 12px;">Growth & Solutions</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Neutral Colors</h3>
+            <div class="color-palette">
+                <div class="color-card">
+                    <div class="color-sample" style="background: #1E1E1E;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Charcoal</div>
+                        <div class="color-values">
+                            <div>HEX: #1E1E1E</div>
+                            <div>RGB: 30, 30, 30</div>
+                        </div>
+                        <p style="margin-top: 10px; font-size: 12px;">Primary Text & Elements</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-sample" style="background: #F5F7FA; border: 1px solid #e0e0e0;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Light Gray</div>
+                        <div class="color-values">
+                            <div>HEX: #F5F7FA</div>
+                            <div>RGB: 245, 247, 250</div>
+                        </div>
+                        <p style="margin-top: 10px; font-size: 12px;">Backgrounds & Dividers</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Gradients</h3>
+            <p>Use gradients sparingly for digital elements, backgrounds, and accent features.</p>
+            <div class="gradient-sample gradient-1"></div>
+            <p style="font-size: 14px; margin-top: 5px;"><strong>Purple to Cyan:</strong> 90° linear gradient from #6B4CE6 to #00D9FF</p>
+
+            <div class="gradient-sample gradient-2"></div>
+            <p style="font-size: 14px; margin-top: 5px;"><strong>Blue to Green:</strong> 90° linear gradient from #0A2463 to #00FF88</p>
+        </section>
+
+        <!-- Typography -->
+        <section class="section">
+            <h2>Typography</h2>
+
+            <h3>Primary Typefaces</h3>
+
+            <div class="typography-sample">
+                <div class="font-name">POPPINS - DISPLAY & HEADINGS</div>
+                <div class="poppins-display">Digital Innovation</div>
+                <div class="poppins-heading" style="margin-top: 20px;">Transformation Through Technology</div>
+                <p style="margin-top: 15px; font-size: 14px;">Weights: Bold (700), SemiBold (600), Medium (500)</p>
+            </div>
+
+            <div class="typography-sample">
+                <div class="font-name">INTER - BODY TEXT</div>
+                <div class="inter-body">
+                    Neoverse Digital Transformation Solutions brings over 12 years of expertise in financial technology,
+                    cybersecurity, and enterprise digital transformation. We partner with leading financial institutions
+                    to deliver innovative solutions that drive growth and operational excellence.
+                </div>
+                <p style="margin-top: 15px; font-size: 14px;">Weights: Medium (500), Regular (400)</p>
+            </div>
+
+            <h3>Arabic Typography</h3>
+            <div class="typography-sample">
+                <div class="font-name">IBM PLEX ARABIC</div>
+                <div style="font-family: Arial, sans-serif; font-size: 32px; font-weight: 700; direction: rtl; text-align: right;">
+                    حلول التحول الرقمي
+                </div>
+                <p style="margin-top: 15px; font-size: 14px;">For all Arabic content - Weights: Bold (700), Medium (500), Regular (400)</p>
+            </div>
+
+            <h3>Type Scale</h3>
+            <ul>
+                <li><strong>Display (H1):</strong> Poppins Bold, 48-72px</li>
+                <li><strong>Heading 1 (H2):</strong> Poppins SemiBold, 36-42px</li>
+                <li><strong>Heading 2 (H3):</strong> Poppins SemiBold, 24-32px</li>
+                <li><strong>Heading 3 (H4):</strong> Poppins Medium, 18-24px</li>
+                <li><strong>Body Large:</strong> Inter Medium, 18px</li>
+                <li><strong>Body Regular:</strong> Inter Regular, 16px</li>
+                <li><strong>Body Small:</strong> Inter Regular, 14px</li>
+                <li><strong>Caption:</strong> Inter Regular, 12px</li>
+            </ul>
+        </section>
+
+        <!-- Applications -->
+        <section class="section">
+            <h2>Brand Applications</h2>
+
+            <h3>Service Lines</h3>
+            <p>Neoverse DTS offers five comprehensive service lines:</p>
+            <ul>
+                <li><strong>Digital Transformation Consulting</strong> - Strategic advisory and roadmap development</li>
+                <li><strong>Custom Solution Development</strong> - Web, mobile, and API development</li>
+                <li><strong>Cybersecurity & Compliance</strong> - ISO 27001, COBIT, security solutions</li>
+                <li><strong>FinTech Solutions</strong> - Banking systems, payment gateways, digital wallets</li>
+                <li><strong>Strategic Partnerships</strong> - Technology representation and integration</li>
+            </ul>
+
+            <h3>Target Audience</h3>
+            <ul>
+                <li>Financial Institutions (Banks, Insurance, FinTech)</li>
+                <li>Enterprise Organizations</li>
+                <li>Government Agencies</li>
+                <li>Decision Makers: CIOs, CTOs, CEOs, CFOs</li>
+            </ul>
+
+            <h3>Brand Voice</h3>
+            <ul>
+                <li><strong>Professional</strong> yet approachable</li>
+                <li><strong>Confident</strong> without being arrogant</li>
+                <li><strong>Knowledgeable</strong> but not condescending</li>
+                <li><strong>Forward-thinking</strong> and innovative</li>
+                <li><strong>Solutions-focused</strong> and pragmatic</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" style="border-top: 2px solid #e0e0e0; padding-top: 40px;">
+            <h2>Contact & Resources</h2>
+            <p>For questions about brand usage or to request additional brand assets, please contact:</p>
+            <p style="margin-top: 20px;">
+                <strong>Neoverse Digital Transformation Solutions</strong><br>
+                Website: [Your Website]<br>
+                Email: [Your Email]<br>
+                Phone: [Your Phone]
+            </p>
+
+            <p style="margin-top: 30px; font-size: 14px; color: #666;">
+                © 2026 Neoverse Digital Transformation Solutions. All rights reserved.<br>
+                This brand guidelines document is confidential and proprietary.
+            </p>
+        </section>
+    </div>
+</body>
+</html>
