@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Catalog - Neoverse Financial Systems Division</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        @page { size: A4; margin: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto 20px;
+            background: white;
+            padding: 20mm;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12mm;
+            padding-bottom: 5mm;
+            border-bottom: 3px solid #0066cc;
+        }
+
+        .logo { font-size: 24px; font-weight: 900; color: #0066cc; }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 5mm;
+            letter-spacing: -0.8px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10mm;
+            line-height: 1.6;
+        }
+
+        .service-section {
+            margin-bottom: 12mm;
+            page-break-inside: avoid;
+        }
+
+        .service-header {
+            background: linear-gradient(135deg, #0066cc, #0052a3);
+            color: white;
+            padding: 5mm;
+            border-radius: 3mm 3mm 0 0;
+            margin-bottom: 0;
+        }
+
+        .service-header h2 {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 2mm;
+        }
+
+        .service-header p {
+            font-size: 12px;
+            opacity: 0.95;
+        }
+
+        .service-body {
+            border: 2px solid #e0e0e0;
+            border-top: none;
+            padding: 5mm;
+            border-radius: 0 0 3mm 3mm;
+        }
+
+        .service-body h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #0066cc;
+            margin-top: 4mm;
+            margin-bottom: 2mm;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .service-body h3:first-child {
+            margin-top: 0;
+        }
+
+        .service-body p {
+            font-size: 11px;
+            color: #333;
+            line-height: 1.7;
+            margin-bottom: 3mm;
+        }
+
+        .service-body ul {
+            margin-left: 5mm;
+            margin-bottom: 4mm;
+        }
+
+        .service-body li {
+            font-size: 11px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 2mm;
+            list-style: none;
+            position: relative;
+            padding-left: 5mm;
+        }
+
+        .service-body li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        .pricing-box {
+            background: #f8f9fa;
+            border-left: 4px solid #0066cc;
+            padding: 4mm;
+            margin: 4mm 0;
+        }
+
+        .pricing-box strong {
+            font-size: 12px;
+            color: #1a1a1a;
+        }
+
+        .pricing-box p {
+            margin: 0;
+            font-size: 11px;
+        }
+
+        .highlight {
+            background: #fff9e6;
+            border-left: 4px solid #ffa500;
+            padding: 3mm;
+            margin: 3mm 0;
+            font-size: 11px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 4mm 0;
+            font-size: 10px;
+        }
+
+        th {
+            background: #f5f5f5;
+            padding: 2.5mm;
+            text-align: left;
+            font-weight: 700;
+            border-bottom: 2px solid #0066cc;
+            font-size: 10px;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 2.5mm;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .footer {
+            margin-top: 15mm;
+            padding-top: 5mm;
+            border-top: 2px solid #0066cc;
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .page { box-shadow: none; margin-bottom: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="header">
+        <div class="logo">NEOVERSE</div>
+        <div style="text-align: right; font-size: 11px; color: #666;">
+            <div style="font-weight: 700;">Service Catalog 2026</div>
+            <div>Financial Systems Division</div>
+        </div>
+    </div>
+
+    <h1>Service Catalog</h1>
+    <p class="subtitle">Comprehensive technology solutions for UAE banking and financial institutions, combining Neoverse's engineering excellence with deep financial services expertise.</p>
+
+    <!-- SERVICE 1 -->
+    <div class="service-section">
+        <div class="service-header">
+            <h2>🔐 Banking Security & MFA Solutions</h2>
+            <p>Multi-Factor Authentication and Security Solutions for Regulatory Compliance</p>
+        </div>
+        <div class="service-body">
+            <p><strong>Overview:</strong> Complete MFA implementation services addressing the UAE Central Bank's SMS OTP elimination mandate (March 2026). Powered by Keypasco Split PKI technology - a leading global MFA solution.</p>
+
+            <h3>Service Deliverables</h3>
+            <ul>
+                <li>Current state security assessment and gap analysis</li>
+                <li>MFA solution design tailored to existing Core Banking systems</li>
+                <li>Keypasco Split PKI implementation and configuration</li>
+                <li>Integration with mobile banking apps and web platforms</li>
+                <li>User enrollment strategy and customer migration plan</li>
+                <li>Central Bank compliance documentation and approval support</li>
+                <li>Staff training and end-user support materials</li>
+                <li>Go-live support and post-implementation monitoring</li>
+            </ul>
+
+            <h3>Technology Stack</h3>
+            <p>Keypasco Split PKI, biometric authentication, hardware tokens, SMS/email backup, REST APIs, mobile SDK integration</p>
+
+            <h3>Target Clients</h3>
+            <p>Commercial banks, Islamic banks, neobanks, exchange houses, payment service providers</p>
+
+            <div class="pricing-box">
+                <strong>Pricing Model</strong>
+                <p><strong>Implementation:</strong> AED 120,000 - 300,000 (depending on size and complexity)</p>
+                <p><strong>Licensing:</strong> Per-user annual fees (Keypasco) - AED 15-30/user/year</p>
+                <p><strong>Support:</strong> Annual maintenance contracts available</p>
+            </div>
+
+            <div class="highlight">
+                <strong>⏰ Urgent Opportunity:</strong> March 2026 regulatory deadline creates immediate demand. Decision cycles shortened to 2-4 weeks. Budgets pre-approved.
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICE 2 -->
+    <div class="service-section">
+        <div class="service-header">
+            <h2>📋 Regulatory Compliance Services</h2>
+            <p>ISO 27001, COBIT, and Central Bank Compliance for Financial Institutions</p>
+        </div>
+        <div class="service-body">
+            <p><strong>Overview:</strong> Comprehensive compliance services leveraging Neoverse's proven track record with UAE regulatory frameworks (TDRA, SIRA, MOI-CS) applied to banking sector requirements.</p>
+
+            <h3>Service Offerings</h3>
+
+            <p><strong>ISO 27001 Implementation & Certification</strong></p>
+            <ul>
+                <li>Gap analysis against ISO 27001:2022 standards</li>
+                <li>Information Security Management System (ISMS) design</li>
+                <li>Policy and procedure documentation</li>
+                <li>Risk assessment and treatment planning</li>
+                <li>Internal audit preparation and support</li>
+                <li>Certification audit coordination</li>
+            </ul>
+
+            <p><strong>COBIT Framework Deployment</strong></p>
+            <ul>
+                <li>IT governance framework assessment</li>
+                <li>COBIT 2019 implementation roadmap</li>
+                <li>Process maturity assessment and improvement plans</li>
+                <li>IT/business alignment strategies</li>
+            </ul>
+
+            <p><strong>Central Bank Compliance</strong></p>
+            <ul>
+                <li>Technology Risk Management Framework implementation</li>
+                <li>Cybersecurity compliance assessments</li>
+                <li>Ongoing regulatory reporting support</li>
+                <li>Audit readiness and examination support</li>
+            </ul>
+
+            <p><strong>Additional Standards</strong></p>
+            <ul>
+                <li>PCI-DSS compliance for payment systems</li>
+                <li>NIST Cybersecurity Framework alignment</li>
+                <li>Data protection and privacy (GDPR/local regulations)</li>
+            </ul>
+
+            <div class="pricing-box">
+                <strong>Pricing Model</strong>
+                <p><strong>Project-based:</strong> AED 50,000 - 150,000 (ISO 27001 full implementation)</p>
+                <p><strong>Retainer:</strong> AED 3,000 - 8,000/month (ongoing compliance support)</p>
+                <p><strong>Assessments:</strong> AED 15,000 - 35,000 (gap analysis/audit readiness)</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+    <div class="header">
+        <div class="logo">NEOVERSE</div>
+        <div style="text-align: right; font-size: 11px; color: #666;">
+            <div style="font-weight: 700;">Service Catalog 2026</div>
+            <div>Page 2</div>
+        </div>
+    </div>
+
+    <!-- SERVICE 3 -->
+    <div class="service-section">
+        <div class="service-header">
+            <h2>🏗️ Banking Network Infrastructure</h2>
+            <p>Secure, Scalable Infrastructure for Financial Institutions</p>
+        </div>
+        <div class="service-body">
+            <p><strong>Overview:</strong> Enterprise-grade network infrastructure services combining Neoverse's engineering excellence with banking-specific security and reliability requirements.</p>
+
+            <h3>Core Services</h3>
+
+            <p><strong>Branch Network Design & Implementation</strong></p>
+            <ul>
+                <li>Secure WAN/LAN architecture for banking branches</li>
+                <li>SD-WAN deployment for branch connectivity</li>
+                <li>Network segmentation and micro-segmentation</li>
+                <li>ATM network integration and security</li>
+                <li>Branch network monitoring and management</li>
+            </ul>
+
+            <p><strong>Data Center Infrastructure</strong></p>
+            <ul>
+                <li>Data center network design (spine-leaf, traditional 3-tier)</li>
+                <li>High-availability and redundancy architecture</li>
+                <li>Storage area networks (SAN) and backup systems</li>
+                <li>Virtualization infrastructure (VMware, Hyper-V)</li>
+                <li>Physical and environmental security systems</li>
+            </ul>
+
+            <p><strong>Disaster Recovery & Business Continuity</strong></p>
+            <ul>
+                <li>DR site design and implementation</li>
+                <li>Replication and failover strategies</li>
+                <li>Backup solutions (on-premise, cloud, hybrid)</li>
+                <li>BC/DR testing and validation</li>
+                <li>RTO/RPO optimization</li>
+            </ul>
+
+            <p><strong>Cloud Connectivity & Hybrid Infrastructure</strong></p>
+            <ul>
+                <li>Secure cloud connectivity (AWS, Azure, Google Cloud)</li>
+                <li>Hybrid infrastructure design</li>
+                <li>Direct Connect / ExpressRoute implementation</li>
+                <li>Cloud security and compliance architecture</li>
+            </ul>
+
+            <div class="pricing-box">
+                <strong>Pricing Model</strong>
+                <p><strong>Design & Consulting:</strong> AED 25,000 - 75,000</p>
+                <p><strong>Implementation:</strong> AED 100,000 - 500,000 (varies by scope)</p>
+                <p><strong>Managed Services:</strong> AED 10,000 - 30,000/month</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICE 4 -->
+    <div class="service-section">
+        <div class="service-header">
+            <h2>💻 Digital Banking Integration</h2>
+            <p>Modern Banking Technology & Channel Integration Services</p>
+        </div>
+        <div class="service-body">
+            <p><strong>Overview:</strong> Integration services for modern banking channels and platforms, including WhatsApp Banking, mobile apps, and Core Banking system modernization.</p>
+
+            <h3>Service Offerings</h3>
+
+            <p><strong>WhatsApp Business Banking (Cxperium Partnership)</strong></p>
+            <ul>
+                <li>Cxperium platform implementation and customization</li>
+                <li>Core Banking system integration via APIs</li>
+                <li>Conversational banking workflows and automation</li>
+                <li>Secure authentication and transaction processing</li>
+                <li>Chatbot and AI-powered customer service</li>
+                <li>Analytics and reporting dashboards</li>
+            </ul>
+
+            <p><strong>Core Banking Integration & APIs</strong></p>
+            <ul>
+                <li>Core Banking system integration (Oracle, Temenos, T24, local systems)</li>
+                <li>RESTful API development and management</li>
+                <li>Middleware implementation (ESB, API Gateway)</li>
+                <li>Legacy system integration and modernization</li>
+                <li>Open Banking API implementation</li>
+            </ul>
+
+            <p><strong>Mobile Banking Development</strong></p>
+            <ul>
+                <li>Mobile banking app backend development</li>
+                <li>API architecture for mobile channels</li>
+                <li>Security implementation (MFA, encryption, secure sessions)</li>
+                <li>Performance optimization and scaling</li>
+                <li>Third-party service integration (payments, transfers, bills)</li>
+            </ul>
+
+            <p><strong>Payment Gateway Integration</strong></p>
+            <ul>
+                <li>Payment gateway integration and testing</li>
+                <li>PCI-DSS compliant payment processing</li>
+                <li>Card management system integration</li>
+                <li>Digital wallet integration</li>
+            </ul>
+
+            <div class="pricing-box">
+                <strong>Pricing Model</strong>
+                <p><strong>WhatsApp Banking:</strong> AED 80,000 - 150,000 (implementation) + platform fees</p>
+                <p><strong>API Integration:</strong> AED 40,000 - 120,000 per major system</p>
+                <p><strong>Mobile Backend:</strong> AED 100,000 - 250,000</p>
+                <p><strong>Payment Gateway:</strong> AED 30,000 - 80,000</p>
+            </div>
+
+            <div class="highlight">
+                <strong>Partnership Advantage:</strong> Cxperium is a proven WhatsApp Business Banking platform with successful deployments in multiple UAE banks. We provide full implementation, customization, and ongoing support.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>NEOVERSE</strong> | Financial Systems & Compliance Division</p>
+        <p>info@neoverse.ae | +971 58 956 6477 | neoverse.ae</p>
+        <p style="margin-top: 3mm; font-size: 9px; color: #999;">All pricing is indicative and subject to detailed scoping. Custom solutions available.</p>
+    </div>
+</div>
+
+</body>
+</html>
